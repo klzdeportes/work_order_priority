@@ -1,0 +1,12 @@
+<odoo>
+    <record id="view_mrp_workorder_tree_inherit" model="ir.ui.view">
+        <field name="name">mrp.workorder.tree.inherit.priority</field>
+        <field name="model">mrp.workorder</field>
+        <field name="inherit_id" ref="mrp.mrp_production_workorder_tree_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree/field[@name='operation_id']" position="before">
+                <field name="priority" widget="priority" readonly="1"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
