@@ -1,7 +1,7 @@
 {
     'name': 'Work Order Priority Sync',
     'version': '1.0',
-    'author': 'Tu Nombre o Empresa',
+    'author': 'KLZ Deportes',
     'license': 'LGPL-3',
     'category': 'Manufacturing',
     'summary': 'Sincroniza la prioridad entre órdenes de producción y órdenes de trabajo.',
