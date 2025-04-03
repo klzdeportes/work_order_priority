@@ -1,11 +1,15 @@
 {
     'name': 'Work Order Priority Sync',
     'version': '1.0',
-    'author': 'KLZ Deportes',
+    'author': 'Tu Nombre o Empresa',
     'license': 'LGPL-3',
     'category': 'Manufacturing',
-    'summary': 'Muestra la prioridad en las órdenes de trabajo sincronizada con la orden de producción',
-    'description': 'Agrega un campo de prioridad visible (no editable) en las órdenes de trabajo, que refleja la prioridad de la orden de producción.',
+    'summary': 'Sincroniza la prioridad entre órdenes de producción y órdenes de trabajo.',
+    'description': """
+        Este módulo agrega un campo de prioridad (estrella ⭐) visible y no editable a las órdenes de trabajo.
+        Se sincroniza automáticamente con la prioridad de la orden de producción asociada.
+        La prioridad es visible desde la vista lista de órdenes de trabajo.
+    """,
     'depends': ['mrp'],
     'data': [
         'security/ir.model.access.csv',
@@ -14,4 +18,5 @@
     'installable': True,
     'application': False,
     'auto_install': False,
+    'images': ['icon.png'],
 }
